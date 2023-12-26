@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FinalProject">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm\TopDesign</v>
+<v>FinalProject\Arm\Arm.cydwr</v>
+<v>FinalProject\Arm\Arm.cydwr\Pins</v>
+<v>FinalProject\Arm\Arm.cydwr\Analog</v>
+<v>FinalProject\Arm\Arm.cydwr\DMA</v>
+<v>FinalProject\Arm\Arm.cydwr\Clocks</v>
+<v>FinalProject\Arm\Arm.cydwr\Interrupts</v>
+<v>FinalProject\Arm\Arm.cydwr\System</v>
+<v>FinalProject\Arm\Arm.cydwr\Directives</v>
+<v>FinalProject\Arm\Arm.cydwr\Flash Security</v>
+<v>FinalProject\Arm\Header Files</v>
+<v>FinalProject\Arm\Header Files\cyapicallbacks.h</v>
+<v>FinalProject\Arm\Source Files</v>
+<v>FinalProject\Arm\Source Files\main.c</v>
+<v>FinalProject\Arm\Generated_Source</v>
+<v>FinalProject\Arm\Generated_Source\PSoC4</v>
+<v>FinalProject\LastLab\TopDesign</v>
+<v>FinalProject\LastLab\LastLab.cydwr</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Pins</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Analog</v>
+<v>FinalProject\LastLab\LastLab.cydwr\DMA</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Clocks</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Interrupts</v>
+<v>FinalProject\LastLab\LastLab.cydwr\System</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Directives</v>
+<v>FinalProject\LastLab\LastLab.cydwr\Flash Security</v>
+<v>FinalProject\LastLab\Header Files</v>
+<v>FinalProject\LastLab\Header Files\cyapicallbacks.h</v>
+<v>FinalProject\LastLab\Source Files</v>
+<v>FinalProject\LastLab\Source Files\main.c</v>
+<v>FinalProject\LastLab\Generated_Source</v>
+<v>FinalProject\LastLab\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\LastLab</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\Arm\TopDesign</v>
+<v>FinalProject\Arm\TopDesign\TopDesign.cysch</v>
+<v>FinalProject\LastLab</v>
+<v>FinalProject\LastLab\TopDesign</v>
+<v>FinalProject\LastLab\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\Arm\TopDesign</v>
+<v>FinalProject\Arm\TopDesign\TopDesign.cysch</v>
+<v>FinalProject\LastLab</v>
+<v>FinalProject\LastLab\TopDesign</v>
+<v>FinalProject\LastLab\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\Arm\CortexM0</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Base_1.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Base_1_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Base_2.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Base_2_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Elbow_Down.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Elbow_Down_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Elbow_Up.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Elbow_Up_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Gripper_In.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Gripper_In_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Gripper_Out.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Gripper_Out_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\M_6_1.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\M_6_1_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\M_6_2.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\M_6_2_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Shoulder_Down.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Shoulder_Down_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Shoulder_Up.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Shoulder_Up_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Wrist_Down.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Wrist_Down_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Wrist_Up.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Listing Files\Wrist_Up_PM.lst</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Arm.elf</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Arm.hex</v>
+<v>FinalProject\Arm\CortexM0\ARM_GCC_541\Debug\Arm.map</v>
+<v>FinalProject\Arm\Arm.gpdsc</v>
+<v>FinalProject\Arm\Arm.rpt</v>
+<v>FinalProject\Arm\Arm_timing.html</v>
+<v>FinalProject\LastLab</v>
+<v>FinalProject\LastLab\LastLab.gpdsc</v>
+<v>FinalProject\LastLab\LastLab.rpt</v>
+<v>FinalProject\LastLab\LastLab_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\Arm\PSoC 4 Architecture TRM</v>
+<v>FinalProject\Arm\PSoC 4200 BLE Family Datasheet</v>
+<v>FinalProject\Arm\System Reference Guides</v>
+<v>FinalProject\Arm\System Reference Guides\cy_boot_v6_10</v>
+<v>FinalProject\Arm\System Reference Guides\cy_dmac_v1_10</v>
+<v>FinalProject\Arm\System Reference Guides\cy_lfclk_v1_20</v>
+<v>FinalProject\Arm\cy_pins_v2_20</v>
+<v>FinalProject\Arm\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FinalProject\Arm\SCB_P4_v4_0.pdf</v>
+<v>FinalProject\LastLab</v>
+<v>FinalProject\LastLab\PSoC 4 Architecture TRM</v>
+<v>FinalProject\LastLab\PSoC 4200 BLE Family Datasheet</v>
+<v>FinalProject\LastLab\System Reference Guides</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_boot_v6_10</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_dmac_v1_10</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_lfclk_v1_20</v>
+<v>FinalProject\LastLab\cy_pins_v2_20</v>
+<v>FinalProject\LastLab\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Arm</v>
+<v>FinalProject\Arm\PSoC 4 Architecture TRM</v>
+<v>FinalProject\Arm\PSoC 4200 BLE Family Datasheet</v>
+<v>FinalProject\Arm\System Reference Guides</v>
+<v>FinalProject\Arm\System Reference Guides\cy_boot_v6_10</v>
+<v>FinalProject\Arm\System Reference Guides\cy_dmac_v1_10</v>
+<v>FinalProject\Arm\System Reference Guides\cy_lfclk_v1_20</v>
+<v>FinalProject\Arm\cy_pins_v2_20</v>
+<v>FinalProject\Arm\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FinalProject\Arm\SCB_P4_v4_0.pdf</v>
+<v>FinalProject\LastLab</v>
+<v>FinalProject\LastLab\PSoC 4 Architecture TRM</v>
+<v>FinalProject\LastLab\PSoC 4200 BLE Family Datasheet</v>
+<v>FinalProject\LastLab\System Reference Guides</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_boot_v6_10</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_dmac_v1_10</v>
+<v>FinalProject\LastLab\System Reference Guides\cy_lfclk_v1_20</v>
+<v>FinalProject\LastLab\cy_pins_v2_20</v>
+<v>FinalProject\LastLab\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Arm.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Arm.cydsn\main.c" />
+<name v=".\Arm.cydsn\Arm.cydwr" />
+<name v=".\LastLab.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\LastLab.cydsn\LastLab.cydwr" />
+<name v=".\LastLab.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="904, 487" SelectedTabbedMdiWindow="90d4b4af-6a17-41c7-9e25-20fb14328b28"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="0209e824-4dc4-4814-9208-9b433075db42" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\TopDesign\TopDesign.cysch" Guid="8c6e8e4b-2ee8-413c-8805-3c70143ffa98" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\main.c" Guid="90d4b4af-6a17-41c7-9e25-20fb14328b28" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\Arm.cydwr" Guid="990b23c5-988b-4c47-925f-e3bb9d4706c4" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\LastLab.cydsn\TopDesign\TopDesign.cysch" Guid="04699124-9f9f-4750-8c90-185399744897" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\LastLab.cydsn\LastLab.cydwr" Guid="deb1ee47-99dc-4896-bbd7-cc426e7840a1" /><DocumentWindow Key="C:\Users\HP\Documents\PSoC Creator\Workspace03\LastLab.cydsn\main.c" Guid="3acc38d6-be56-4ae0-a972-beceddda9211" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
