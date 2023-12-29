@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Base_1.c  
+* File Name: Base_Left.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Base_1.h"
+#include "Base_Left.h"
 
-static Base_1_BACKUP_STRUCT  Base_1_backup = {0u, 0u, 0u};
+static Base_Left_BACKUP_STRUCT  Base_Left_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: Base_1_Sleep
+* Function Name: Base_Left_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static Base_1_BACKUP_STRUCT  Base_1_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_Sleep_Wakeup
+*  \snippet Base_Left_SUT.c usage_Base_Left_Sleep_Wakeup
 *******************************************************************************/
-void Base_1_Sleep(void)
+void Base_Left_Sleep(void)
 {
-    #if defined(Base_1__PC)
-        Base_1_backup.pcState = Base_1_PC;
+    #if defined(Base_Left__PC)
+        Base_Left_backup.pcState = Base_Left_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            Base_1_backup.usbState = Base_1_CR1_REG;
-            Base_1_USB_POWER_REG |= Base_1_USBIO_ENTER_SLEEP;
-            Base_1_CR1_REG &= Base_1_USBIO_CR1_OFF;
+            Base_Left_backup.usbState = Base_Left_CR1_REG;
+            Base_Left_USB_POWER_REG |= Base_Left_USBIO_ENTER_SLEEP;
+            Base_Left_CR1_REG &= Base_Left_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Base_1__SIO)
-        Base_1_backup.sioState = Base_1_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Base_Left__SIO)
+        Base_Left_backup.sioState = Base_Left_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        Base_1_SIO_REG &= (uint32)(~Base_1_SIO_LPM_MASK);
+        Base_Left_SIO_REG &= (uint32)(~Base_Left_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: Base_1_Wakeup
+* Function Name: Base_Left_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
@@ -77,22 +77,22 @@ void Base_1_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to Base_1_Sleep() for an example usage.
+*  Refer to Base_Left_Sleep() for an example usage.
 *******************************************************************************/
-void Base_1_Wakeup(void)
+void Base_Left_Wakeup(void)
 {
-    #if defined(Base_1__PC)
-        Base_1_PC = Base_1_backup.pcState;
+    #if defined(Base_Left__PC)
+        Base_Left_PC = Base_Left_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            Base_1_USB_POWER_REG &= Base_1_USBIO_EXIT_SLEEP_PH1;
-            Base_1_CR1_REG = Base_1_backup.usbState;
-            Base_1_USB_POWER_REG &= Base_1_USBIO_EXIT_SLEEP_PH2;
+            Base_Left_USB_POWER_REG &= Base_Left_USBIO_EXIT_SLEEP_PH1;
+            Base_Left_CR1_REG = Base_Left_backup.usbState;
+            Base_Left_USB_POWER_REG &= Base_Left_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Base_1__SIO)
-        Base_1_SIO_REG = Base_1_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Base_Left__SIO)
+        Base_Left_SIO_REG = Base_Left_backup.sioState;
     #endif
 }
 

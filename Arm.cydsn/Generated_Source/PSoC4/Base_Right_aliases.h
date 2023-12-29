@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Base_1.h  
+* File Name: Base_Right.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Base_1_ALIASES_H) /* Pins Base_1_ALIASES_H */
-#define CY_PINS_Base_1_ALIASES_H
+#if !defined(CY_PINS_Base_Right_ALIASES_H) /* Pins Base_Right_ALIASES_H */
+#define CY_PINS_Base_Right_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Base_1_0			(Base_1__0__PC)
-#define Base_1_0_PS		(Base_1__0__PS)
-#define Base_1_0_PC		(Base_1__0__PC)
-#define Base_1_0_DR		(Base_1__0__DR)
-#define Base_1_0_SHIFT	(Base_1__0__SHIFT)
-#define Base_1_0_INTR	((uint16)((uint16)0x0003u << (Base_1__0__SHIFT*2u)))
+#define Base_Right_0			(Base_Right__0__PC)
+#define Base_Right_0_PS		(Base_Right__0__PS)
+#define Base_Right_0_PC		(Base_Right__0__PC)
+#define Base_Right_0_DR		(Base_Right__0__DR)
+#define Base_Right_0_SHIFT	(Base_Right__0__SHIFT)
+#define Base_Right_0_INTR	((uint16)((uint16)0x0003u << (Base_Right__0__SHIFT*2u)))
 
-#define Base_1_INTR_ALL	 ((uint16)(Base_1_0_INTR))
+#define Base_Right_INTR_ALL	 ((uint16)(Base_Right_0_INTR))
 
 
-#endif /* End Pins Base_1_ALIASES_H */
+#endif /* End Pins Base_Right_ALIASES_H */
 
 
 /* [] END OF FILE */

@@ -8,7 +8,6 @@
 <files />
 <projects>
 <v>.\Arm.cydsn\Arm.cyprj</v>
-<v>.\LastLab.cydsn\LastLab.cyprj</v>
 </projects>
 <workspace_id v="6c05ff7c-1bb2-4404-bd44-d1193d9cd8c8" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />

@@ -1,5 +1,5 @@
 # Arm
-# 2023-12-21 14:15:09Z
+# 2023-12-29 13:44:12Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -10,15 +10,16 @@ dont_use_io iocell 6 0
 # IO_1@[IOP=(6)][IoId=(1)] is reserved: KhzXtalEnabled
 dont_use_io iocell 6 1
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
-set_io "Wrist_Up(0)" iocell 3 0
-set_io "Wrist_Down(0)" iocell 2 0
+set_io "Wrist_Up(0)" iocell 3 1
+set_io "Wrist_Down(0)" iocell 2 1
 set_io "Elbow_Up(0)" iocell 2 2
 set_io "Elbow_Down(0)" iocell 3 2
 set_io "Shoulder_Up(0)" iocell 2 4
 set_io "Shoulder_Down(0)" iocell 3 4
 set_io "Gripper_In(0)" iocell 2 3
 set_io "Gripper_Out(0)" iocell 3 3
-set_io "Base_1(0)" iocell 3 5
-set_io "Base_2(0)" iocell 2 5
+set_io "Base_Left(0)" iocell 3 5
+set_io "Base_Right(0)" iocell 2 5
+set_io "Light_Switch(0)" iocell 2 0
 set_io "\UART:tx(0)\" iocell 1 5
 set_io "\UART:rx(0)\" iocell 1 4

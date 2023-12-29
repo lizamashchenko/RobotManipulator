@@ -16,13 +16,14 @@ typedef enum {
     SHOULDER,
     ELBOW,
     WRIST,
-    GRIPPER
+    GRIPPER,
+    LIGHT
 } ArmPart;
 
 
 void nullify() {
-    Base_1_Write(0);
-    Base_2_Write(0);
+    Base_Left_Write(0);
+    Base_Right_Write(0);
     Shoulder_Up_Write(0);
     Shoulder_Down_Write(0);
     Elbow_Up_Write(0);
@@ -32,113 +33,116 @@ void nullify() {
     Gripper_In_Write(0);
     Gripper_Out_Write(0);
 }
+
+// direction 0 - Up/Right/Forward
 void activateMotor(ArmPart a, int direction) {
     nullify();
     switch(a) {
         case WRIST:
-            if(direction == 0) {
-                Wrist_Up_Write(0);
-                Wrist_Down_Write(1);
-            }
-            else {
-                Wrist_Up_Write(1);
-                Wrist_Down_Write(0);
-            }
+            Wrist_Up_Write(!direction);
+            Wrist_Down_Write(direction);
             break;
         case ELBOW:
+            Elbow_Up_Write(!direction);
+            Elbow_Down_Write(direction);
             break;
         case SHOULDER:
+            Shoulder_Up_Write(!direction);
+            Shoulder_Down_Write(direction);
             break;
         case BASE:
+            Base_Right_Write(!direction);
+            Base_Left_Write(direction);
             break;
         case GRIPPER:
+            Gripper_In_Write(!direction);
+            Gripper_Out_Write(direction);
             break;
+        case LIGHT:
+            Light_Switch_Write(!Light_Switch_Read());
+            break;
+            
     }
 }
 int main(void)
 {
+    nullify();
     CyGlobalIntEnable;
     UART_Start();
     UART_UartPutString("UART Started");
     
-    char ch = ' ';
+    char command = ' ';
     
     for(;;)
     {
-        ch = UART_UartGetChar();
-        UART_UartPutChar(ch);
-        if(ch == ' ')
+        command = UART_UartGetChar();
+        UART_UartPutChar(command);
+        if(command == ' ')
             continue;
-        switch(ch) {
+        switch(command) {
             case 'w':
             case 'W':
-                // activateMotor(ELBOW, 1);
-                Elbow_Up_Write(1);
-                Elbow_Down_Write(0);
-                CyDelay(50);
-                break;
-            case 'q':
-            case 'Q':
-                Shoulder_Up_Write(1);
-                Shoulder_Down_Write(0);
-                CyDelay(50);
-                break;
-            case 'e':
-            case 'E':
-                Shoulder_Down_Write(1);
-                Shoulder_Up_Write(0);
+                activateMotor(ELBOW, 0);
                 CyDelay(50);
                 break;
             case 's':
             case 'S':
-                Elbow_Down_Write(1);
-                Elbow_Up_Write(0);
+                activateMotor(ELBOW, 1);
                 CyDelay(50);
                 break;
+                
+            case 'q':
+            case 'Q':
+                activateMotor(SHOULDER, 1);
+                CyDelay(50);
+                break;
+            case 'e':
+            case 'E':
+                activateMotor(SHOULDER, 0);
+                CyDelay(50);
+                break;
+            
             case 'a':
             case 'A':
-                Base_1_Write(0);
-                Base_2_Write(1);
+                activateMotor(BASE, 0);
                 CyDelay(50);
                 break;
             case 'd':
             case'D':
-                Base_1_Write(1);
-                Base_2_Write(0);
+                activateMotor(BASE, 1);
                 CyDelay(50);
                 break;
+                
             case 'i':
             case 'I':
-                Wrist_Up_Write(1);
-                Wrist_Down_Write(0);
+                activateMotor(WRIST, 1);
                 CyDelay(50);
                 break;
             case 'k':
             case 'K':
-                Wrist_Down_Write(1);
-                Wrist_Up_Write(0);
+                activateMotor(WRIST, 0);
                 CyDelay(50);
                 break;
             case 'j':
             case 'J':
-                Gripper_In_Write(1);
-                Gripper_Out_Write(0);
+                activateMotor(GRIPPER, 1);
                 CyDelay(50);
                 break;
             case 'l':
             case 'L':
-                Gripper_Out_Write(1);
-                Gripper_In_Write(0);
+                activateMotor(GRIPPER, 0);
                 CyDelay(50);
+                break;
+            case 'U':
+            case 'u':
+                activateMotor(LIGHT, 0);
                 break;
             default:
                 nullify();
                 break;
         }
-        //Gripper_In_Write(0);
-        //Gripper_Out_Write(0);
     }
- 
+    nullify();
 }
 
 /* [] END OF FILE */

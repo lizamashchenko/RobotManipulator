@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Base_1.c  
+* File Name: Base_Right.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Base_1.h"
+#include "Base_Right.h"
 
 
-#if defined(Base_1__PC)
-    #define Base_1_SetP4PinDriveMode(shift, mode)  \
+#if defined(Base_Right__PC)
+    #define Base_Right_SetP4PinDriveMode(shift, mode)  \
     do { \
-        Base_1_PC =   (Base_1_PC & \
-                                (uint32)(~(uint32)(Base_1_DRIVE_MODE_IND_MASK << \
-                                (Base_1_DRIVE_MODE_BITS * (shift))))) | \
+        Base_Right_PC =   (Base_Right_PC & \
+                                (uint32)(~(uint32)(Base_Right_DRIVE_MODE_IND_MASK << \
+                                (Base_Right_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (Base_1_DRIVE_MODE_BITS * (shift))); \
+                                (Base_Right_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define Base_1_SetP4PinDriveMode(shift, mode)  \
+        #define Base_Right_SetP4PinDriveMode(shift, mode)  \
         do { \
-            Base_1_USBIO_CTRL_REG = (Base_1_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(Base_1_DRIVE_MODE_IND_MASK << \
-                                    (Base_1_DRIVE_MODE_BITS * (shift))))) | \
+            Base_Right_USBIO_CTRL_REG = (Base_Right_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(Base_Right_DRIVE_MODE_IND_MASK << \
+                                    (Base_Right_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (Base_1_DRIVE_MODE_BITS * (shift))); \
+                                    (Base_Right_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(Base_1__PC) || (CY_PSOC4_4200L) 
+#if defined(Base_Right__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: Base_1_SetDriveMode
+    * Function Name: Base_Right_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet Base_1_SUT.c usage_Base_1_SetDriveMode
+    *  \snippet Base_Right_SUT.c usage_Base_Right_SetDriveMode
     *******************************************************************************/
-    void Base_1_SetDriveMode(uint8 mode)
+    void Base_Right_SetDriveMode(uint8 mode)
     {
-		Base_1_SetP4PinDriveMode(Base_1__0__SHIFT, mode);
+		Base_Right_SetP4PinDriveMode(Base_Right__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: Base_1_Write
+* Function Name: Base_Right_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_Write
+*  \snippet Base_Right_SUT.c usage_Base_Right_Write
 *******************************************************************************/
-void Base_1_Write(uint8 value)
+void Base_Right_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(Base_1_DR & (uint8)(~Base_1_MASK));
-    drVal = (drVal | ((uint8)(value << Base_1_SHIFT) & Base_1_MASK));
-    Base_1_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(Base_Right_DR & (uint8)(~Base_Right_MASK));
+    drVal = (drVal | ((uint8)(value << Base_Right_SHIFT) & Base_Right_MASK));
+    Base_Right_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: Base_1_Read
+* Function Name: Base_Right_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void Base_1_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_Read  
+*  \snippet Base_Right_SUT.c usage_Base_Right_Read  
 *******************************************************************************/
-uint8 Base_1_Read(void)
+uint8 Base_Right_Read(void)
 {
-    return (uint8)((Base_1_PS & Base_1_MASK) >> Base_1_SHIFT);
+    return (uint8)((Base_Right_PS & Base_Right_MASK) >> Base_Right_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Base_1_ReadDataReg
+* Function Name: Base_Right_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 Base_1_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred Base_1_Read() API because the 
-* Base_1_ReadDataReg() reads the data register instead of the status 
+* preferred Base_Right_Read() API because the 
+* Base_Right_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 Base_1_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_ReadDataReg 
+*  \snippet Base_Right_SUT.c usage_Base_Right_ReadDataReg 
 *******************************************************************************/
-uint8 Base_1_ReadDataReg(void)
+uint8 Base_Right_ReadDataReg(void)
 {
-    return (uint8)((Base_1_DR & Base_1_MASK) >> Base_1_SHIFT);
+    return (uint8)((Base_Right_DR & Base_Right_MASK) >> Base_Right_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: Base_1_SetInterruptMode
+* Function Name: Base_Right_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 Base_1_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use Base_1_INTR_ALL to configure the
+*  component. Or you may use Base_Right_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - Base_1_0_INTR       (First pin in the list)
-*  - Base_1_1_INTR       (Second pin in the list)
+*  - Base_Right_0_INTR       (First pin in the list)
+*  - Base_Right_1_INTR       (Second pin in the list)
 *  - ...
-*  - Base_1_INTR_ALL     (All pins in Pins component)
+*  - Base_Right_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 Base_1_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_SetInterruptMode
+*  \snippet Base_Right_SUT.c usage_Base_Right_SetInterruptMode
 *******************************************************************************/
-void Base_1_SetInterruptMode(uint16 position, uint16 mode)
+void Base_Right_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  Base_1_INTCFG & (uint32)(~(uint32)position);
-    Base_1_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  Base_Right_INTCFG & (uint32)(~(uint32)position);
+    Base_Right_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Base_1_ClearInterrupt
+* Function Name: Base_Right_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void Base_1_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet Base_1_SUT.c usage_Base_1_ClearInterrupt
+*  \snippet Base_Right_SUT.c usage_Base_Right_ClearInterrupt
 *******************************************************************************/
-uint8 Base_1_ClearInterrupt(void)
+uint8 Base_Right_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(Base_1_INTSTAT & Base_1_MASK);
-	Base_1_INTSTAT = maskedStatus;
-    return maskedStatus >> Base_1_SHIFT;
+	uint8 maskedStatus = (uint8)(Base_Right_INTSTAT & Base_Right_MASK);
+	Base_Right_INTSTAT = maskedStatus;
+    return maskedStatus >> Base_Right_SHIFT;
 }
 
 

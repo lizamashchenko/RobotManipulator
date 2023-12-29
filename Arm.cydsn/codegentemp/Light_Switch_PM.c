@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: M_6_2.c  
+* File Name: Light_Switch.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "M_6_2.h"
+#include "Light_Switch.h"
 
-static M_6_2_BACKUP_STRUCT  M_6_2_backup = {0u, 0u, 0u};
+static Light_Switch_BACKUP_STRUCT  Light_Switch_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: M_6_2_Sleep
+* Function Name: Light_Switch_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static M_6_2_BACKUP_STRUCT  M_6_2_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet M_6_2_SUT.c usage_M_6_2_Sleep_Wakeup
+*  \snippet Light_Switch_SUT.c usage_Light_Switch_Sleep_Wakeup
 *******************************************************************************/
-void M_6_2_Sleep(void)
+void Light_Switch_Sleep(void)
 {
-    #if defined(M_6_2__PC)
-        M_6_2_backup.pcState = M_6_2_PC;
+    #if defined(Light_Switch__PC)
+        Light_Switch_backup.pcState = Light_Switch_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            M_6_2_backup.usbState = M_6_2_CR1_REG;
-            M_6_2_USB_POWER_REG |= M_6_2_USBIO_ENTER_SLEEP;
-            M_6_2_CR1_REG &= M_6_2_USBIO_CR1_OFF;
+            Light_Switch_backup.usbState = Light_Switch_CR1_REG;
+            Light_Switch_USB_POWER_REG |= Light_Switch_USBIO_ENTER_SLEEP;
+            Light_Switch_CR1_REG &= Light_Switch_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(M_6_2__SIO)
-        M_6_2_backup.sioState = M_6_2_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Light_Switch__SIO)
+        Light_Switch_backup.sioState = Light_Switch_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        M_6_2_SIO_REG &= (uint32)(~M_6_2_SIO_LPM_MASK);
+        Light_Switch_SIO_REG &= (uint32)(~Light_Switch_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: M_6_2_Wakeup
+* Function Name: Light_Switch_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
@@ -77,22 +77,22 @@ void M_6_2_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to M_6_2_Sleep() for an example usage.
+*  Refer to Light_Switch_Sleep() for an example usage.
 *******************************************************************************/
-void M_6_2_Wakeup(void)
+void Light_Switch_Wakeup(void)
 {
-    #if defined(M_6_2__PC)
-        M_6_2_PC = M_6_2_backup.pcState;
+    #if defined(Light_Switch__PC)
+        Light_Switch_PC = Light_Switch_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            M_6_2_USB_POWER_REG &= M_6_2_USBIO_EXIT_SLEEP_PH1;
-            M_6_2_CR1_REG = M_6_2_backup.usbState;
-            M_6_2_USB_POWER_REG &= M_6_2_USBIO_EXIT_SLEEP_PH2;
+            Light_Switch_USB_POWER_REG &= Light_Switch_USBIO_EXIT_SLEEP_PH1;
+            Light_Switch_CR1_REG = Light_Switch_backup.usbState;
+            Light_Switch_USB_POWER_REG &= Light_Switch_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(M_6_2__SIO)
-        M_6_2_SIO_REG = M_6_2_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Light_Switch__SIO)
+        Light_Switch_SIO_REG = Light_Switch_backup.sioState;
     #endif
 }
 

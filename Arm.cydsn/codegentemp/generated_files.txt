@@ -45,22 +45,18 @@
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Gripper_Out.h" value="HEADER;;;;;Gripper_Out" />
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Gripper_Out_aliases.h" value="HEADER;;;;;Gripper_Out" />
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Gripper_Out_PM.c" value="SOURCE_C;CortexM0;;;;Gripper_Out" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_1.c" value="SOURCE_C;CortexM0;;;;Base_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_1.h" value="HEADER;;;;;Base_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_1_aliases.h" value="HEADER;;;;;Base_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_1_PM.c" value="SOURCE_C;CortexM0;;;;Base_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_2.c" value="SOURCE_C;CortexM0;;;;Base_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_2.h" value="HEADER;;;;;Base_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_2_aliases.h" value="HEADER;;;;;Base_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_2_PM.c" value="SOURCE_C;CortexM0;;;;Base_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_1.c" value="SOURCE_C;CortexM0;;;;M_6_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_1.h" value="HEADER;;;;;M_6_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_1_aliases.h" value="HEADER;;;;;M_6_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_1_PM.c" value="SOURCE_C;CortexM0;;;;M_6_1" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_2.c" value="SOURCE_C;CortexM0;;;;M_6_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_2.h" value="HEADER;;;;;M_6_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_2_aliases.h" value="HEADER;;;;;M_6_2" />
-  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\M_6_2_PM.c" value="SOURCE_C;CortexM0;;;;M_6_2" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Left.c" value="SOURCE_C;CortexM0;;;;Base_Left" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Left.h" value="HEADER;;;;;Base_Left" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Left_aliases.h" value="HEADER;;;;;Base_Left" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Left_PM.c" value="SOURCE_C;CortexM0;;;;Base_Left" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Right.c" value="SOURCE_C;CortexM0;;;;Base_Right" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Right.h" value="HEADER;;;;;Base_Right" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Right_aliases.h" value="HEADER;;;;;Base_Right" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Base_Right_PM.c" value="SOURCE_C;CortexM0;;;;Base_Right" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Light_Switch.c" value="SOURCE_C;CortexM0;;;;Light_Switch" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Light_Switch.h" value="HEADER;;;;;Light_Switch" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Light_Switch_aliases.h" value="HEADER;;;;;Light_Switch" />
+  <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\Light_Switch_PM.c" value="SOURCE_C;CortexM0;;;;Light_Switch" />
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\UART.c" value="SOURCE_C;CortexM0;;;;UART" />
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\UART.h" value="HEADER;;;;;UART" />
   <file name="C:\Users\HP\Documents\PSoC Creator\Workspace03\Arm.cydsn\codegentemp\UART_SPI_UART.h" value="HEADER;;;;;UART" />

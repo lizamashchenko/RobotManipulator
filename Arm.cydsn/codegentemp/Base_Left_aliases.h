@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: M_6_2.h  
+* File Name: Base_Left.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_M_6_2_ALIASES_H) /* Pins M_6_2_ALIASES_H */
-#define CY_PINS_M_6_2_ALIASES_H
+#if !defined(CY_PINS_Base_Left_ALIASES_H) /* Pins Base_Left_ALIASES_H */
+#define CY_PINS_Base_Left_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define M_6_2_0			(M_6_2__0__PC)
-#define M_6_2_0_PS		(M_6_2__0__PS)
-#define M_6_2_0_PC		(M_6_2__0__PC)
-#define M_6_2_0_DR		(M_6_2__0__DR)
-#define M_6_2_0_SHIFT	(M_6_2__0__SHIFT)
-#define M_6_2_0_INTR	((uint16)((uint16)0x0003u << (M_6_2__0__SHIFT*2u)))
+#define Base_Left_0			(Base_Left__0__PC)
+#define Base_Left_0_PS		(Base_Left__0__PS)
+#define Base_Left_0_PC		(Base_Left__0__PC)
+#define Base_Left_0_DR		(Base_Left__0__DR)
+#define Base_Left_0_SHIFT	(Base_Left__0__SHIFT)
+#define Base_Left_0_INTR	((uint16)((uint16)0x0003u << (Base_Left__0__SHIFT*2u)))
 
-#define M_6_2_INTR_ALL	 ((uint16)(M_6_2_0_INTR))
+#define Base_Left_INTR_ALL	 ((uint16)(Base_Left_0_INTR))
 
 
-#endif /* End Pins M_6_2_ALIASES_H */
+#endif /* End Pins Base_Left_ALIASES_H */
 
 
 /* [] END OF FILE */

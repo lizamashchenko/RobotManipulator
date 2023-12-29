@@ -87,14 +87,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_2.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\M_6_2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_SPI_UART.h</File>
@@ -126,14 +118,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Gripper_Out.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Gripper_Out_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Gripper_Out_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_2.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_2_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_2_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Wrist_Up.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Wrist_Up.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Wrist_Up_aliases.h</File>
@@ -158,6 +142,18 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Shoulder_Down.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Shoulder_Down_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Shoulder_Down_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Light_Switch.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Light_Switch.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Light_Switch_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Light_Switch_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Left.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Left.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Left_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Left_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Right.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Right.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Right_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Base_Right_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
